@@ -16,6 +16,7 @@ export class ShareDataService {
       }
       
     getCookieToken(): string | null {
+      console.log("get Token");
         const cookies = document.cookie.split("; ");
         for (const cookie of cookies) {
           const [key, value] = cookie.split("=");
